@@ -1,6 +1,5 @@
 // Describe your program
 #include <iostream>
-#include <iomanip>
 using namespace std;
 int main()
 {
