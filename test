@@ -1,0 +1,10 @@
+#!/bin/bash
+UT_PARAM=$1
+if [ ! -f catch-main.o ]; then
+    g++ -std=c++11 -c catch-main.cpp
+fi
+
+g++ -std=c++11 catch-main.o unittest.cpp -o unittest 
+if [ $? -eq 0 ]; then
+    ./unittest $1
+fi
