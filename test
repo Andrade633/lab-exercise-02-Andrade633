@@ -1,5 +1,4 @@
 #!/bin/bash
-UT_PARAM=$1
 if [ ! -f catch-main.o ]; then
     g++ -std=c++11 -c catch-main.cpp
 fi
